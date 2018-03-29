@@ -35,17 +35,8 @@ california_housing_dataframe["median_house_value"] /= 1000.0
 
 
 def my_input_fn(features, targets, batch_size = 1, shuffle=True, num_epochs=None):
-    """Trains a linear regression model of one feature.
+    
   
-    Args:
-      features: pandas DataFrame of features
-      targets: pandas DataFrame of targets
-      batch_size: Size of batches to be passed to the model
-      shuffle: True or False. Whether to shuffle the data.
-      num_epochs: Number of epochs for which data should be repeated. None = repeat indefinitely
-    Returns:
-      Tuple of (features, labels) for next data batch
-    """
   
     # Convert pandas data into a dict of np arrays.
     features = {key:np.array(value) for key,value in dict(features).items()}                                           
