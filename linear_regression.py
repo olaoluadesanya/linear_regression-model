@@ -107,5 +107,5 @@ def train(steps, batch_size, learning_rate, features):
         root_mean_squared_error = math.sqrt(mean_squared_error)
         print(root_mean_squared_error)
 
-train(100, 10, 0.0001, "total_rooms")
+train(100, 10, 0.0001, "total_bedrooms")
                                               
